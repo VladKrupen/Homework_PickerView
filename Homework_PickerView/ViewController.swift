@@ -31,7 +31,9 @@ class ViewController: UIViewController, PHPickerViewControllerDelegate, UIPicker
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view.backgroundColor = .black
+        
         imageView.contentMode = .scaleAspectFill
         
         pickerView.delegate = self
@@ -56,6 +58,7 @@ class ViewController: UIViewController, PHPickerViewControllerDelegate, UIPicker
                     if let image = image as? UIImage {
                         self.selectedImages.append(image)
                         self.pickerView.reloadAllComponents()
+                        self.imageView.image = self.selectedImages.first
                     }
                 }
             }

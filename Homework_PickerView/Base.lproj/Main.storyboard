@@ -31,9 +31,9 @@
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nA3-j0-9PK">
-                                <rect key="frame" x="47" y="349" width="300" height="419"/>
+                                <rect key="frame" x="46.666666666666657" y="349" width="300" height="419"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="z7u-Ho-ifT"/>
+                                    <constraint firstAttribute="width" constant="300" id="88r-o0-52U"/>
                                 </constraints>
                             </pickerView>
                         </subviews>
