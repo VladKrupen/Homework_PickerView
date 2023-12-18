@@ -103,7 +103,9 @@ class ViewController: UIViewController, PHPickerViewControllerDelegate, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        imageView.image = selectedImages[row]
+        if !selectedImages.isEmpty {
+            imageView.image = selectedImages[row]
+        }
         
     }
     
